@@ -3,8 +3,10 @@ const fs = require("fs")
 
 const dirPath = path.join(__dirname, "../posts")
 const dirPathPages = path.join(__dirname, "../src/pages/content")
+const dirPathPage = path.join(__dirname, "../page")
 let postlist = []
 let pagelist = []
+let pagelists = []
 
 const months = {
     "01": "January",
@@ -121,18 +123,18 @@ const getPages = () => {
 }
 
 const getPage = () => {
-    fs.readdir(dirPathPages, (err, files) => {
+    fs.readdir(dirPathPage, (err, files) => {
         if (err) {
             return console.log("Failed to list contents of directory: " + err)
         }
         files.forEach((file, i) => {
             let page
-            fs.readFile(`${dirPathPages}/${file}`, "utf8", (err, contents) => { 
+            fs.readFile(`${dirPathPage}/${file}`, "utf8", (err, contents) => { 
                 page = {
                     content: contents
                 }
-                pagelist.push(page)
-                let data = JSON.stringify(pagelist)
+                pagelists.push(page)
+                let data = JSON.stringify(pagelists)
                 fs.writeFileSync("src/page.json", data)
             })
         })
