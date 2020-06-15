@@ -2,7 +2,7 @@ const path = require("path")
 const fs = require("fs")
 
 const dirPath = path.join(__dirname, "../posts")
-const dirPathPages = path.join(__dirname, "../src/pages/content")
+const dirPathPages = path.join(__dirname, "../page")
 const dirPathPage = path.join(__dirname, "../page")
 let postlist = []
 let pagelist = []
@@ -136,6 +136,7 @@ const getPage = () => {
                 pagelists.push(page)
                 let data = JSON.stringify(pagelists)
                 fs.writeFileSync("src/page.json", data)
+                console.log(data)
             })
         })
     })
