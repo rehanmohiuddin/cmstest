@@ -1,12 +1,17 @@
-import React from "react"
+import React from "react";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const Footer = () => {
-    return (
-        <div className="footer">
-            <hr/>
-            <p>&copy; willjw3 {new Date().getFullYear()}</p>
-        </div>
-    )
+  return (
+    <MDBFooter color="blue" className="font-small pt-4 mt-4">
+      
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright © 2015 HT Global Systems Inc - All Rights Reserved
+        </MDBContainer>
+      </div>
+    </MDBFooter>
+  );
 }
 
-export default Footer
+export default Footer;
