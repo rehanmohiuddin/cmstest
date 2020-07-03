@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { MDBCard, MDBCardText } from "mdbreact"
 
 const Carrer = () => {
+    console.log(aboutText)
     return (
         <Layout>
              <h1 style={{textAlign: `center`, marginBottom: `40px`}}>Carrers At HT GLOBAL SYSTEMS</h1>
