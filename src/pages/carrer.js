@@ -10,9 +10,9 @@ const Carrer = () => {
              <h1 style={{textAlign: `center`, marginBottom: `40px`}}>Carrers At HT GLOBAL SYSTEMS</h1>
             <div className="page-content">
                 <MDBCard style={{backgroundColor:"#fffff"}}>
-                <Markdown source={aboutText[0].title} escapeHtml={false} />
+               
                     <MDBCardText>
-                    <Markdown source={aboutText[0].body} escapeHtml={false} />
+                    <Markdown source={aboutText[0].content} escapeHtml={false} />
                     </MDBCardText>
                 </MDBCard>
             </div>
