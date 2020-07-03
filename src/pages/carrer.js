@@ -13,7 +13,7 @@ const Carrer = () => {
                 <MDBCard style={{backgroundColor:"#fffff"}}>
                
                     <MDBCardText>
-                    <Markdown source={aboutText[0].body} escapeHtml={false} />
+                    <Markdown source={aboutText[0].content.slice(21,aboutText[0].content.length-1)} escapeHtml={false} />
                     </MDBCardText>
                 </MDBCard>
             </div>
