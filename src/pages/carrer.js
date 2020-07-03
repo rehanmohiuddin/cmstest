@@ -1,39 +1,22 @@
 import React from "react"
-import { Redirect } from "react-router-dom"
 import Markdown from "react-markdown"
+import aboutText from "../pages.json"
 import Layout from "../components/layout"
-import pagelist from "../pages.json"
-import "./pages.css"
+import { MDBCard, MDBCardText } from "mdbreact"
 
-const Page = (props) => {
-    const validId = parseInt(props.match.params.id)
-    if (!validId) {
-        return <Redirect to="/404" />
-    }
-    const fetchedPost = {}
-    let postExists = false
-    console.log(pagelist)
-    pagelist.forEach((post, i) => {
-        
-        if (validId === post.id) {
-            fetchedPost.title = post.title ? post.title : "No title given"
-            fetchedPost.content = post.content ? post.content : "No content given"
-            postExists = true
-        }
-    })
-    if (postExists === false) {
-        return <Redirect to="/404" />
-    }
+const Carrer = () => {
     return (
         <Layout>
-            <div className="post">
-                <h2>{fetchedPost.title}</h2>
-                <small>Published on {fetchedPost.date} by {fetchedPost.author}</small>
-                <hr/>
-                <Markdown source={fetchedPost.content} escapeHtml={false} />
+             <h1 style={{textAlign: `center`, marginBottom: `40px`}}>Carrers At HT GLOBAL SYSTEMS</h1>
+            <div className="page-content">
+                <MDBCard style={{backgroundColor:"#fffff"}}>
+                    <MDBCardText>
+                    <Markdown source={aboutText[0].content} escapeHtml={false} />
+                    </MDBCardText>
+                </MDBCard>
             </div>
         </Layout>
     )
 }
 
-export default Page
+export default Carrer
