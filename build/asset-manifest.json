@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f867cbe4.chunk.css",
+    "main.js": "/static/js/main.293c7432.chunk.js",
+    "main.js.map": "/static/js/main.293c7432.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5f3fb7e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5f3fb7e.js.map",
+    "static/css/2.6c9ee2ba.chunk.css": "/static/css/2.6c9ee2ba.chunk.css",
+    "static/js/2.6f21c438.chunk.js": "/static/js/2.6f21c438.chunk.js",
+    "static/js/2.6f21c438.chunk.js.map": "/static/js/2.6f21c438.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b6c089aeb6762428044f168602210a85.js": "/precache-manifest.b6c089aeb6762428044f168602210a85.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.6c9ee2ba.chunk.css.map": "/static/css/2.6c9ee2ba.chunk.css.map",
+    "static/css/main.f867cbe4.chunk.css.map": "/static/css/main.f867cbe4.chunk.css.map",
+    "static/js/2.6f21c438.chunk.js.LICENSE": "/static/js/2.6f21c438.chunk.js.LICENSE",
+    "static/media/index.css": "/static/media/raleway-latin-900italic.c1c43520.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5f3fb7e.js",
+    "static/css/2.6c9ee2ba.chunk.css",
+    "static/js/2.6f21c438.chunk.js",
+    "static/css/main.f867cbe4.chunk.css",
+    "static/js/main.293c7432.chunk.js"
+  ]
+}
